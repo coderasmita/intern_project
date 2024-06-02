@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:intern_project/screen/alerts_screen.dart';
+import 'package:intern_project/screen/avatarsusericons_screen.dart';
+import 'package:intern_project/screen/badges_screen.dart';
+import 'package:intern_project/screen/breadcrumbs_screen.dart';
+
 import 'package:intern_project/screen/buttons_screen.dart';
+import 'package:intern_project/screen/cards_screen.dart';
 import 'package:intern_project/screen/checkboxes_screen.dart';
 import 'package:intern_project/screen/dropdown_menus.dart';
 import 'package:intern_project/screen/inputtext_screen.dart';
+import 'package:intern_project/screen/modaldialogs_screen.dart';
 import 'package:intern_project/screen/navigationbars_screen.dart';
 import 'package:intern_project/screen/progress_indicators.dart';
 import 'package:intern_project/screen/radiobutton_screen.dart';
@@ -10,6 +17,7 @@ import 'package:intern_project/screen/searchbar_screen.dart';
 import 'package:intern_project/screen/sidedrawernavigation_screen.dart';
 import 'package:intern_project/screen/tabbar_screen.dart';
 import 'package:intern_project/screen/toggleswitches_screen.dart';
+import 'package:intern_project/screen/tooltips_screen.dart';
 
 import '../components/buttons/primary_button.dart';
 
@@ -48,19 +56,6 @@ class HomeScreen extends StatelessWidget {
               );
             },
             title: "Input Text",
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          PrimaryButton(
-            title: 'Pregress Indicators',
-            onPressed: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => ProgressIndicators(),
-                  ));
-            },
           ),
           const SizedBox(
             height: 10,
@@ -187,6 +182,107 @@ class HomeScreen extends StatelessWidget {
               );
             },
             title: "Sidedrawer Navigation",
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          PrimaryButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const ModaldialogsScreen(),
+                ),
+              );
+            },
+            title: "Modal Dialogs",
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          PrimaryButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const TooltipsScreen(),
+                ),
+              );
+            },
+            title: "Tooltips",
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          PrimaryButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const AlertsScreen(),
+                ),
+              );
+            },
+            title: "Alerts",
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          PrimaryButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const BadgesScreen(),
+                ),
+              );
+            },
+            title: "Badges",
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          PrimaryButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const CardsScreen(),
+                ),
+              );
+            },
+            title: "Cards",
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          PrimaryButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const AvatarsusericonsScreen(),
+                ),
+              );
+            },
+            title: "Avatars & User Icons",
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          PrimaryButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const BreadcrumbsScreen(),
+                ),
+              );
+            },
+            title: "Breadcrumbs",
+          ),
+          const SizedBox(
+            height: 10,
           ),
         ],
       ),

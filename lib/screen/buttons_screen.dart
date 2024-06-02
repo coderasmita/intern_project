@@ -16,37 +16,41 @@ class ButtonsScreen extends StatelessWidget {
       body: Column(
         children: [
           PrimaryButton(
-            title: 'Button1',
+            title: 'Button',
             icon: const Icon(
               Icons.chevron_right,
               color: Colors.white,
             ),
-            onPressed: () {
-              print('hello1');
-            },
+            onPressed: () {},
+          ),
+          const SizedBox(
+            height: 10,
           ),
           const PrimaryButton(
-            title: 'Button2',
+            title: 'Button 2',
             onPressed: null,
           ),
           const SizedBox(height: 10),
           SecondaryButton(
-            title: 'ok',
+            title: 'Button',
             onPressed: () {},
           ),
+          const SizedBox(
+            height: 10,
+          ),
           const SecondaryButton(
-            title: 'lala',
+            title: 'Button',
             onPressed: null,
           ),
           const SizedBox(
             height: 10,
           ),
           const TextButtons(
-            title: "Button 1",
+            title: "Button ",
             onPressed: null,
           ),
           TextButtons(
-            title: "Button 2",
+            title: "Button ",
             onPressed: () {},
           ),
         ],
