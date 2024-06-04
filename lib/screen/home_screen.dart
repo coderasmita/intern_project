@@ -15,6 +15,7 @@ import 'package:intern_project/screen/progress_indicators.dart';
 import 'package:intern_project/screen/radiobutton_screen.dart';
 import 'package:intern_project/screen/searchbar_screen.dart';
 import 'package:intern_project/screen/sidedrawernavigation_screen.dart';
+import 'package:intern_project/screen/statemanagement_screen.dart';
 import 'package:intern_project/screen/tabbar_screen.dart';
 import 'package:intern_project/screen/toggleswitches_screen.dart';
 import 'package:intern_project/screen/tooltips_screen.dart';
@@ -280,6 +281,20 @@ class HomeScreen extends StatelessWidget {
               );
             },
             title: "Breadcrumbs",
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          PrimaryButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const StateManagementScreen(),
+                ),
+              );
+            },
+            title: "State Management",
           ),
           const SizedBox(
             height: 10,
